@@ -1,0 +1,7 @@
+*.suo
+*.opendb
+*.db
+*.user
+vsprojects/Release/
+vsprojects/Debug/
+vsprojects/google/

@@ -125,7 +125,7 @@ struct hash<const char*>
 template <typename Key, typename Data,
           typename HashFcn = hash<Key>,
           typename EqualKey = int >
-class hash_map : public HASH_NAMESPACE::hash_map<
+class hash_map : public HASH_NAMESPACE::HASH_CLASS<
     Key, Data, HashFcn> {
  public:
   hash_map(int = 0) {}
@@ -134,7 +134,7 @@ class hash_map : public HASH_NAMESPACE::hash_map<
 template <typename Key,
           typename HashFcn = hash<Key>,
           typename EqualKey = int >
-class hash_set : public HASH_NAMESPACE::hash_set<
+class hash_set : public HASH_NAMESPACE::SET_CLASS<
     Key, HashFcn> {
  public:
   hash_set(int = 0) {}
